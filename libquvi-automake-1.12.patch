@@ -1,0 +1,17 @@
+--- libquvi-0.4.1/configure.ac.orig	2012-06-24 17:06:22.799692074 +0200
++++ libquvi-0.4.1/configure.ac	2012-06-24 17:11:14.781443604 +0200
+@@ -31,11 +31,14 @@ AC_DEFINE_UNQUOTED([CANONICAL_HOST], "$h
+ AM_INIT_AUTOMAKE([-Wall -Werror foreign dist-bzip2 dist-xz])
+ AM_SILENT_RULES([yes])
+ 
++AM_PROG_AR
++
+ LT_INIT()
+ LT_PREREQ([2.2])
+ 
+ # Checks for programs.
+ AC_PROG_CC
++AM_PROG_CC_C_O
+ 
+ AC_PATH_PROGS([ND], [naturaldocs NaturalDocs], [],
+   [$ND_PATH$PATH_SEPARATOR$PATH])
