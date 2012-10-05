@@ -3,6 +3,7 @@
 %bcond_without	static_libs	# don't build static libraries
 #
 Summary:	A cross-platform library for parsing flash media stream
+Summary(pl.UTF-8):	Wieloplatformowa biblioteka do analizy flashowych strumieni multimedialnych
 Name:		libquvi
 Version:	0.4.1
 Release:	1
@@ -17,7 +18,7 @@ BuildRequires:	automake
 BuildRequires:	curl-devel >= 7.18.2
 BuildRequires:	libquvi-scripts >= 0.4.0
 BuildRequires:	libtool >= 2:2.2
-BuildRequires:	lua51-devel
+BuildRequires:	lua51-devel >= 5.1
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -26,6 +27,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libquvi is a cross-platform library for parsing flash media stream.
+
+%description -l pl.UTF-8
+libquvi to wieloplatformowa biblioteka do analizy flashowych strumieni
+multimedialnych.
 
 %package devel
 Summary:	Header files for libquvi library
