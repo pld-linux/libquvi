@@ -6,7 +6,7 @@ Summary:	A cross-platform library for parsing flash media stream
 Summary(pl.UTF-8):	Wieloplatformowa biblioteka do analizy flashowych strumieni multimedialnych
 Name:		libquvi
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
